@@ -1,0 +1,303 @@
+{
+  "version": "6.0",
+  "nxVersion": "21.3.11",
+  "pathMappings": {},
+  "nxJsonPlugins": [
+    {
+      "name": "@nx/vite/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "testTargetName": "test",
+        "serveTargetName": "serve",
+        "previewTargetName": "preview",
+        "serveStaticTargetName": "serve-static",
+        "typecheckTargetName": "typecheck"
+      }
+    },
+    {
+      "name": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    },
+    {
+      "name": "@nx/playwright/plugin",
+      "options": {
+        "targetName": "e2e"
+      }
+    },
+    {
+      "name": "@nx/jest/plugin",
+      "options": {
+        "targetName": "test"
+      }
+    }
+  ],
+  "fileMap": {
+    "projectFileMap": {
+      "web": [
+        {
+          "file": "web/eslint.config.js",
+          "hash": "6898695751728726704",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "web/index.html",
+          "hash": "10230306946906184829"
+        },
+        {
+          "file": "web/jest.config.ts",
+          "hash": "16481880068010347016"
+        },
+        {
+          "file": "web/project.json",
+          "hash": "14497540780527087769"
+        },
+        {
+          "file": "web/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "web/src/app/app.module.css",
+          "hash": "8887387885984320532"
+        },
+        {
+          "file": "web/src/app/app.spec.tsx",
+          "hash": "12109395395346477033",
+          "deps": [
+            "npm:@testing-library/react",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "web/src/app/app.tsx",
+          "hash": "16769172931813496200",
+          "deps": [
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "web/src/app/nx-welcome.tsx",
+          "hash": "14708174282304233720"
+        },
+        {
+          "file": "web/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "web/src/main.tsx",
+          "hash": "763379880219152615",
+          "deps": [
+            "npm:react",
+            "npm:react-dom",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "web/src/styles.css",
+          "hash": "5195668842064076916"
+        },
+        {
+          "file": "web/tsconfig.app.json",
+          "hash": "17534131638295275382"
+        },
+        {
+          "file": "web/tsconfig.json",
+          "hash": "548923470133819599"
+        },
+        {
+          "file": "web/tsconfig.spec.json",
+          "hash": "6810478594055726884"
+        },
+        {
+          "file": "web/vite.config.ts",
+          "hash": "5139902052596813021",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
+      "cascade-wash-app": [
+        {
+          "file": ".gitignore",
+          "hash": "1862265637977512098"
+        },
+        {
+          "file": ".prettierignore",
+          "hash": "14688272390704683536"
+        },
+        {
+          "file": ".prettierrc",
+          "hash": "16267754514737964994"
+        },
+        {
+          "file": ".vscode/extensions.json",
+          "hash": "10066300031063478629"
+        },
+        {
+          "file": ".windsurf/rules/windsprint-workflow.md",
+          "hash": "14560305113703561128"
+        },
+        {
+          "file": ".windsurfrules.md",
+          "hash": "9158771346624419147"
+        },
+        {
+          "file": "END_GOAL.md",
+          "hash": "3295694063946947624"
+        },
+        {
+          "file": "README.md",
+          "hash": "8891436869137930806"
+        },
+        {
+          "file": "docs/batches/batch-1/BATCH1_CHECKLIST.md",
+          "hash": "2900091524436023947"
+        },
+        {
+          "file": "docs/batches/batch-1/BATCH1_SUMMARY.md",
+          "hash": "17444040392894212188"
+        },
+        {
+          "file": "docs/guidelines.md",
+          "hash": "13676369593018542742"
+        },
+        {
+          "file": "docs/patches/patch-1/PATCH1_CHECKLIST.md",
+          "hash": "703504270923273691"
+        },
+        {
+          "file": "docs/patches/patch-1/PATCH1_SUMMARY.md",
+          "hash": "12534051308257196693"
+        },
+        {
+          "file": "eslint.config.js",
+          "hash": "2478217381773231556",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "jest.config.ts",
+          "hash": "3494843969422251966",
+          "deps": [
+            "npm:@nx/jest"
+          ]
+        },
+        {
+          "file": "jest.preset.js",
+          "hash": "9430166341120122740",
+          "deps": [
+            "npm:@nx/jest"
+          ]
+        },
+        {
+          "file": "nx.json",
+          "hash": "11439632583495035388"
+        },
+        {
+          "file": "package-lock.json",
+          "hash": "1569094373450037417"
+        },
+        {
+          "file": "package.json",
+          "hash": "1111737796080594179",
+          "deps": [
+            "npm:@eslint/js",
+            "npm:@nrwl/cypress",
+            "npm:@nrwl/jest",
+            "npm:@nrwl/next",
+            "npm:@nrwl/react",
+            "npm:@nrwl/workspace",
+            "npm:@nx/devkit",
+            "npm:@nx/eslint",
+            "npm:@nx/eslint-plugin",
+            "npm:@nx/jest",
+            "npm:@nx/js",
+            "npm:@nx/playwright",
+            "npm:@nx/react",
+            "npm:@nx/vite",
+            "npm:@nx/web",
+            "npm:@playwright/test",
+            "npm:@swc-node/register",
+            "npm:@swc/cli",
+            "npm:@swc/core",
+            "npm:@swc/helpers",
+            "npm:@testing-library/react",
+            "npm:@types/jest",
+            "npm:@types/node",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@vitejs/plugin-react",
+            "npm:@vitest/ui",
+            "npm:babel-jest",
+            "npm:eslint",
+            "npm:eslint-config-prettier",
+            "npm:eslint-plugin-import",
+            "npm:eslint-plugin-jsx-a11y",
+            "npm:eslint-plugin-playwright",
+            "npm:eslint-plugin-react",
+            "npm:eslint-plugin-react-hooks",
+            "npm:jest",
+            "npm:jest-environment-jsdom",
+            "npm:jsdom",
+            "npm:nx",
+            "npm:prettier",
+            "npm:ts-jest",
+            "npm:ts-node",
+            "npm:tslib",
+            "npm:typescript",
+            "npm:typescript-eslint",
+            "npm:vite",
+            "npm:vitest",
+            "npm:react",
+            "npm:react-dom",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "tsconfig.base.json",
+          "hash": "16936441711144470533"
+        }
+      ],
+      "web-e2e": [
+        {
+          "file": "web-e2e/eslint.config.js",
+          "hash": "15297556473855815726",
+          "deps": [
+            "npm:eslint-plugin-playwright"
+          ]
+        },
+        {
+          "file": "web-e2e/playwright.config.ts",
+          "hash": "17980557531165067284",
+          "deps": [
+            "npm:@playwright/test",
+            "npm:@nx/playwright",
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "web-e2e/project.json",
+          "hash": "1681027981448211756"
+        },
+        {
+          "file": "web-e2e/src/example.spec.ts",
+          "hash": "16019101014373124625",
+          "deps": [
+            "npm:@playwright/test"
+          ]
+        },
+        {
+          "file": "web-e2e/tsconfig.json",
+          "hash": "13921281020092875063"
+        }
+      ]
+    },
+    "nonProjectFiles": []
+  }
+}

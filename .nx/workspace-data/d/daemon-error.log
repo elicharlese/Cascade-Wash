@@ -1,0 +1,26 @@
+Daemon process terminated and closed the connection
+
+Messages from the log:
+}
+[NX v21.3.11 Daemon Server] - 2025-08-04T06:23:34.683Z - Done responding to the client File watch changed
+[NX v21.3.11 Daemon Server] - 2025-08-04T06:23:34.683Z - Handled FILE-WATCH-CHANGED. Handling time: 0. Response time: 0.
+[NX v21.3.11 Daemon Server] - 2025-08-04T06:23:34.685Z - [REQUEST]: Responding to the client. File watch changed
+Error [ERR_STREAM_DESTROYED]: Cannot call write after a stream was destroyed
+    at _write (node:internal/streams/writable:489:11)
+    at Writable.write (node:internal/streams/writable:508:10)
+    at /Users/elicharlese/CascadeProjects/Cascade-Wash/node_modules/nx/src/daemon/server/shutdown-utils.js:73:16
+    at new Promise (<anonymous>)
+    at respondToClient (/Users/elicharlese/CascadeProjects/Cascade-Wash/node_modules/nx/src/daemon/server/shutdown-utils.js:69:12)
+    at handleResult (/Users/elicharlese/CascadeProjects/Cascade-Wash/node_modules/nx/src/daemon/server/server.js:198:52)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Promise.all (index 0)
+    at async /Users/elicharlese/CascadeProjects/Cascade-Wash/node_modules/nx/src/daemon/server/file-watching/file-watcher-sockets.js:27:9
+    at async /Users/elicharlese/CascadeProjects/Cascade-Wash/node_modules/nx/src/utils/promised-based-queue.js:19:21 {
+  code: 'ERR_STREAM_DESTROYED'
+}
+[NX v21.3.11 Daemon Server] - 2025-08-04T06:23:34.685Z - Done responding to the client File watch changed
+[NX v21.3.11 Daemon Server] - 2025-08-04T06:23:34.685Z - Handled FILE-WATCH-CHANGED. Handling time: 0. Response time: 0.
+
+
+
+More information: /Users/elicharlese/CascadeProjects/Cascade-Wash/.nx/workspace-data/d/daemon.log
